@@ -1,0 +1,10 @@
+kumuluzee:
+  name: stepathon
+  version: 1.0.0
+  env:
+    name: dev
+  datasources:
+    - jndi-name: jdbc/stepathon
+      connection-url: jdbc:postgresql://localhost:5432/eestec
+      username: postgres
+      password: postgres

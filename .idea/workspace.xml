@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="44a8dd02-6329-4a88-adfb-fe6240f6ffd8" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/Stepathon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/LocationApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/StepathonUserApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/resources/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entitete/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entitete/src/main/java/si/cedeladela/entitete/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entitete/src/main/java/si/cedeladela/entitete/StepathonUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entitete/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql_db/init-db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql_db/init-tables-db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/dtos/LocationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/dtos/StepathonUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/LeaderboardManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/LocationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/StepathonUserManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/mappers/LocationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/mappers/StepathonUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storitve/src/main/resources/META-INF/beans.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Np02ysdlZuYtHKKFdpY2EU27ys" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "16",
+    "last_opened_file_path": "/home/zigaklun/fri/prvi/prpo/prpoIJProjects/projekt/primerjalnik-cen",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="si.cedeladela.mappers" />
+      <recent name="si.cedeladela.api.v1.viri" />
+      <recent name="si.cedeladela.managers" />
+      <recent name="si.cedeladela.dtos" />
+      <recent name="si.cedeladela" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.kumuluzEE">
+    <configuration name="kumuluzEE" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="temurin-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.kumuluz.ee.EeApplication" />
+      <module name="api" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="api-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/api/target/api-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="entitete-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/entitete/target/entitete-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="storitve-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/storitve/target/storitve-1.0-SNAPSHOT.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.kumuluzEE" />
+      <item itemvalue="JAR Application.api-1.0-SNAPSHOT.jar" />
+      <item itemvalue="JAR Application.entitete-1.0-SNAPSHOT.jar" />
+      <item itemvalue="JAR Application.storitve-1.0-SNAPSHOT.jar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.storitve-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.entitete-1.0-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.api-1.0-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="44a8dd02-6329-4a88-adfb-fe6240f6ffd8" name="Changes" comment="" />
+      <created>1680345516620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680345516620</updated>
+      <workItem from="1680345518482" duration="13707000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+  </component>
+</project>
