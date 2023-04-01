@@ -4,11 +4,20 @@ import java.util.List;
 
 public class StepathonUserDto {
 
+    private int id;
     private String username;
     private String password;
     private Integer score;
     private Integer steps;
     private List<LocationDto> locations;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;

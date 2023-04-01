@@ -2,7 +2,9 @@
 package si.cedeladela.api.v1.viri;
 
 import com.kumuluz.ee.cors.annotations.CrossOrigin;
+import com.kumuluz.ee.rest.beans.QueryParameters;
 import org.eclipse.microprofile.openapi.annotations.Operation;
+import org.eclipse.microprofile.openapi.annotations.headers.Header;
 import org.eclipse.microprofile.openapi.annotations.media.Content;
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
@@ -18,6 +20,7 @@ import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.List;
 
 @Path("stepathon-user")
 @Produces(MediaType.APPLICATION_JSON)
@@ -44,6 +47,33 @@ public class StepathonUserApi {
     @Path("{username}")
     public Response getStepathonUser(@PathParam("username") String username) {
         return Response.status(Response.Status.OK).entity(StepathonUserMapper.stepathonUserToStepathonUserDto(stepathonUserManager.getByUsername(username))).build();
+    }
+
+    @Tag(name = "StepathonUser")
+    @Operation(description = "Vrne seznam vseh userjev.", summary = "Seznam vseh userjev z izracunanim scorom.")
+    @APIResponses({
+            @APIResponse(responseCode = "200",
+                    description = "Seznam userjev.",
+                    content = @Content(mediaType = "application/json", schema = @Schema(implementation = StepathonUserDto.class)))
+    })
+    @GET
+    public Response getAllStepathonUsers() {
+
+        return Response.ok(StepathonUserMapper.stepathonUserToStepathonUserDto(stepathonUserManager.getAll())).build();
+    }
+
+    @Tag(name = "StepathonUser")
+    @Operation(description = "Ustvari novega stepathonUserja", summary = "Ustvari stepathonUserja.")
+    @APIResponses({
+            @APIResponse(responseCode = "200",
+                    description = "Nov stepathonUser.",
+                    content = @Content(mediaType = "application/json", schema = @Schema(implementation = StepathonUserDto.class))),
+            @APIResponse(responseCode = "400",
+                    description = "Napaka pri ustvarjanju stepathonUserja.")
+    })
+    @POST
+    public Response createStepathonUser(StepathonUserDto stepathonUserDto) {
+        return Response.status(Response.Status.CREATED).entity(StepathonUserMapper.stepathonUserToStepathonUserDto(stepathonUserManager.create(StepathonUserMapper.stepathonUserDtoToStepathonUser(stepathonUserDto)))).build();
     }
 
 }

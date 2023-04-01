@@ -1,6 +1,8 @@
 package si.cedeladela.entitete;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity(name = "location")
 public class Location {
@@ -18,12 +20,11 @@ public class Location {
     @Column(name = "longitude")
     private Double longitude;
 
-    @Column(name = "steps")
-    private Integer steps;
+    @Column(name = "active")
+    private Boolean active;
 
-    @ManyToOne
-    @JoinColumn(name = "stepathon_user_id")
-    private StepathonUser stepathonUser;
+    @ManyToMany(mappedBy = "locations", fetch = FetchType.EAGER)
+    private List<StepathonUser> stepathonUsers = new ArrayList<>();
 
     public Integer getId() {
         return id;
@@ -57,19 +58,19 @@ public class Location {
         this.longitude = longitude;
     }
 
-    public Integer getSteps() {
-        return steps;
+    public List<StepathonUser> getStepathonUsers() {
+        return stepathonUsers;
     }
 
-    public void setSteps(Integer steps) {
-        this.steps = steps;
+    public void setStepathonUsers(List<StepathonUser> stepathonUsers) {
+        this.stepathonUsers = stepathonUsers;
     }
 
-    public StepathonUser getStepathonUser() {
-        return stepathonUser;
+    public Boolean getActive() {
+        return active;
     }
 
-    public void setStepathonUser(StepathonUser stepathonUser) {
-        this.stepathonUser = stepathonUser;
+    public void setActive(Boolean active) {
+        this.active = active;
     }
 }

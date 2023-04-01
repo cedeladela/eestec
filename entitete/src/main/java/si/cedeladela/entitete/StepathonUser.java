@@ -1,6 +1,7 @@
 package si.cedeladela.entitete;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "stepathon_user")
@@ -22,8 +23,11 @@ public class StepathonUser {
     @Column(name = "steps")
     private Integer steps;
 
-    @OneToMany(mappedBy = "stepathonUser")
-    private List<Location> locations;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "stepathon_user_location",
+            joinColumns = @JoinColumn(name = "stepathon_user_id"),
+            inverseJoinColumns = @JoinColumn(name = "location_id"))
+    private List<Location> locations = new ArrayList<>();
 
     public Integer getId() {
         return id;
@@ -63,5 +67,13 @@ public class StepathonUser {
 
     public void setSteps(Integer steps) {
         this.steps = steps;
+    }
+
+    public List<Location> getLocations() {
+        return locations;
+    }
+
+    public void setLocations(List<Location> locations) {
+        this.locations = locations;
     }
 }
