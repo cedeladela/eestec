@@ -33,7 +33,20 @@ public class StepathonUserApi {
     @Inject
     private StepathonUserManager stepathonUserManager;
 
-
+    @Tag(name = "StepathonUser")
+    @Operation(description = "Vrne uporabnika glede na id.", summary = "Stepathon user glede na id.")
+    @APIResponses({
+            @APIResponse(responseCode = "200",
+                    description = "StepathonUser.",
+                    content = @Content(mediaType = "application/json", schema = @Schema(implementation = StepathonUserDto.class))),
+            @APIResponse(responseCode = "404",
+                    description = "StepathonUser ne obstaja.")
+    })
+    @GET
+    @Path("byId/{id}")
+    public Response getStepathonUser(@PathParam("id") int id) {
+        return Response.status(Response.Status.OK).entity(StepathonUserMapper.stepathonUserToStepathonUserDto(stepathonUserManager.getById(id))).build();
+    }
     @Tag(name = "StepathonUser")
     @Operation(description = "Vrne uporabnika glede na username.", summary = "Stepathon user glede na username.")
     @APIResponses({
@@ -74,6 +87,21 @@ public class StepathonUserApi {
     @POST
     public Response createStepathonUser(StepathonUserDto stepathonUserDto) {
         return Response.status(Response.Status.CREATED).entity(StepathonUserMapper.stepathonUserToStepathonUserDto(stepathonUserManager.create(StepathonUserMapper.stepathonUserDtoToStepathonUser(stepathonUserDto)))).build();
+    }
+
+    @Tag(name = "StepathonUser")
+    @Path("steps")
+    @Operation(description = "Posodobi korake", summary = "Posodobi korake\".")
+    @APIResponses({
+            @APIResponse(responseCode = "200",
+                    description = "Posodobi korake\".",
+                    content = @Content(mediaType = "application/json", schema = @Schema(implementation = StepathonUserDto.class))),
+            @APIResponse(responseCode = "400",
+                    description = "Napaka pri Posodobi korake\".")
+    })
+    @POST
+    public Response setSteps(StepathonUserDto stepathonUserDto) {
+        return Response.status(Response.Status.CREATED).entity(StepathonUserMapper.stepathonUserToStepathonUserDto(stepathonUserManager.setSteps(StepathonUserMapper.stepathonUserDtoToStepathonUser(stepathonUserDto)))).build();
     }
 
 }

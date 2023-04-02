@@ -34,7 +34,9 @@ public class StepathonUserManager {
         try {
             Query q = em.createQuery("SELECT u FROM stepathon_user u WHERE u.id = :id");
             q.setParameter("id", id);
-            return (StepathonUser) q.getSingleResult();
+            StepathonUser stepathonUser = (StepathonUser) q.getSingleResult();
+            stepathonUser.setScore(calculateScore(stepathonUser));
+            return stepathonUser;
         } catch (NoResultException e) {
             return null;
         }
@@ -53,7 +55,7 @@ public class StepathonUserManager {
     }
 
     public List<StepathonUser> getAll(){
-        Query q = em.createQuery("SELECT u FROM stepathon_user u");
+        Query q = em.createQuery("SELECT u FROM stepathon_user u ORDER BY u.score DESC");
         List<StepathonUser> users = (List<StepathonUser>) q.getResultList();
 
         if (users != null) {
@@ -66,14 +68,21 @@ public class StepathonUserManager {
 
     @Transactional
     public StepathonUser create(StepathonUser user){
-
-        List<Location> existingLocations = getById(user.getId()).getLocations();
+        StepathonUser existingUser = getById(user.getId());
+        List<Location> existingLocations = existingUser.getLocations();
         if (user.getLocations().size() > 0) {
             List<Location> locationsInProximity = locationProximity(user);
             existingLocations.addAll(locationsInProximity);
         }
-        user.setLocations(existingLocations);
-        return em.merge(user);
+        existingUser.setLocations(existingLocations);
+        return em.merge(existingUser);
+    }
+
+    @Transactional
+    public StepathonUser setSteps(StepathonUser user){
+        StepathonUser existingUser = getById(user.getId());
+        existingUser.setSteps(user.getSteps());
+        return em.merge(existingUser);
     }
 
     private List<Location> locationProximity(StepathonUser user) {

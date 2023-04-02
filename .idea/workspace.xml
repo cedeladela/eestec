@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44a8dd02-6329-4a88-adfb-fe6240f6ffd8" name="Changes" comment="tojeto">
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/ActivateLocationApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/utils/DistanceCalculator.java" afterDir="false" />
+    <list default="true" id="44a8dd02-6329-4a88-adfb-fe6240f6ffd8" name="Changes" comment="poprauki">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/LocationApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/LocationApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/StepathonUserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/si/cedeladela/api/v1/viri/StepathonUserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entitete/src/main/java/si/cedeladela/entitete/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/entitete/src/main/java/si/cedeladela/entitete/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entitete/src/main/java/si/cedeladela/entitete/StepathonUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/entitete/src/main/java/si/cedeladela/entitete/StepathonUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sql_db/init-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_db/init-db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql_db/init-tables-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql_db/init-tables-db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/dtos/LocationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/dtos/LocationDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/dtos/StepathonUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/dtos/StepathonUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/LocationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/LocationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/StepathonUserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/managers/StepathonUserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/mappers/LocationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/mappers/LocationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/mappers/StepathonUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/storitve/src/main/java/si/cedeladela/mappers/StepathonUserMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +157,7 @@
       <workItem from="1680361793346" duration="8132000" />
       <workItem from="1680370980901" duration="8022000" />
       <workItem from="1680379698489" duration="511000" />
+      <workItem from="1680380234099" duration="7121000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1680361819067</created>
@@ -176,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680361819067</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tojeto">
+      <created>1680380275276</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680380275276</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +193,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
     <MESSAGE value="tojeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="tojeto" />
+    <MESSAGE value="poprauki" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprauki" />
   </component>
 </project>
